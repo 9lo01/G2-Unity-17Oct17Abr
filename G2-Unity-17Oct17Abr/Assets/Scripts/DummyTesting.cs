@@ -55,6 +55,8 @@ public class DummyTesting : MonoBehaviour
     if (collision.gameObject.CompareTag("SafeArea"))
     {
       Inventario = collision.gameObject.transform.parent.gameObject.GetComponent<SafeZone>().Items[2];
+
+            Debug.Log("Al chocar con la SafeArea obtuviste: " + Inventario);
     }
   }
 }

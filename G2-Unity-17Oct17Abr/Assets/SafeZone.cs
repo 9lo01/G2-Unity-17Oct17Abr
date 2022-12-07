@@ -6,7 +6,8 @@ public class SafeZone : MonoBehaviour
 {
   public string Item = "Sword";
   public List<string> Items;
-  public int healthPoints = 2;
+  public int healthPoints = 1;
+
   // Start is called before the first frame update
   void Start()
   {

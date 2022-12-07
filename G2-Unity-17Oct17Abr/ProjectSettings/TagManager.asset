@@ -8,6 +8,7 @@ TagManager:
   - RightKillWall
   - Obstacle
   - SafeArea
+  - SafeZone
   layers:
   - Default
   - TransparentFX
