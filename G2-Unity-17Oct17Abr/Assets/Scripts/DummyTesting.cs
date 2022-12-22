@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-// Clase esta encargada de poder comunicar y encapsular la informacion de un script
+/// <summary>
+/// this class (<c> DummyTesting </c>) has the power of containing features for the main character.
+/// </summary>
 public class DummyTesting : MonoBehaviour
 {
   // ESTRUCTURA DE UNA VARIABLE: PUBLIC/PRIVATE + TIPO DE DATO + NOMBRE DE LA VARIABLE + DATO ASIGNADO

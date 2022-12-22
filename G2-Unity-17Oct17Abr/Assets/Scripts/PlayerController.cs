@@ -93,23 +93,26 @@ public class PlayerController : MonoBehaviour
         /// (variable pública ya declara antes)
         if (Vector3.Distance(transform.position, MovePoint.position) <= LimitArea)
         {
+            // si la variable IsPet es igual a falso
             if (IsPet == false)
             {
-                //Movimiento en horizontal definido por absolutos (+, -)
+                // si el movimiento en horizontal es definido por absolutos (+, -) y es igual a 1f
                 if (Mathf.Abs(x) == 1f)
                 {
+                    // entoces a la posición del MovePoint hay que sumarle una nuevo Vector3, cuyo valor sera: (la variable x de los absolutos, 0f y 0f)
                     MovePoint.position += new Vector3(x, 0f, 0f);
                 }
 
-                //Movimiento en vertical definido por absolutos (+, -)
+                //si el movimiento en vertical es definido por absolutos (+, -) y es igual a 1f
                 if (Mathf.Abs(y) == 1f)
                 {
+                    //entonces a la posicion del MovePoint hay que sumarle un nuevo Vector3, cuyo valor sera: (la variable y de los absolutos, 0f y 0f)
                     MovePoint.position += new Vector3(0f, y, 0f);
                 }
             }
         }
     }
-
+    // esta siguiente función es solo un ejemplo
     /// <summary>
     /// This is an example.
     /// </summary>
