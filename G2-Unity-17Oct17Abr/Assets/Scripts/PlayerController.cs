@@ -97,6 +97,8 @@ public class PlayerController : MonoBehaviour
             if (IsPet == false)
             {
                 // si el movimiento en horizontal es definido por absolutos (+, -) y es igual a 1f
+                // los absolutos se usan en este caso como una forma de controlar el calculo del movimiento del jugador, ya que el juego está pensado para
+                // que el jugador se desplace en tiles.
                 if (Mathf.Abs(x) == 1f)
                 {
                     // entoces a la posición del MovePoint hay que sumarle una nuevo Vector3, cuyo valor sera: (la variable x de los absolutos, 0f y 0f)
