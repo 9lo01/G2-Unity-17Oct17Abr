@@ -45,10 +45,12 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // Here we are calling the "Move" function once per second.
+      if (MovePoint.gameObject.GetComponent<MovePointDetection>().IsObjectNear == false)
+      {
         Move();
-    }
+      }
 
+    }
     /// <summary>
     /// This method is in charge of the movement of the object. 
     /// <example>

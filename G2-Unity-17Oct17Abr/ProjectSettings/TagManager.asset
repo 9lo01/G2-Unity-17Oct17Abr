@@ -9,6 +9,7 @@ TagManager:
   - Obstacle
   - SafeArea
   - SafeZone
+  - Interaction
   layers:
   - Default
   - TransparentFX
